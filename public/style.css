@@ -48,5 +48,5 @@ header {
 
 .active {
     font-weight: bold;
-    border-bottom: 3px solid gb(12, 223, 223); 
+    border-bottom: 3px solid rgb(12, 223, 223); 
 }
