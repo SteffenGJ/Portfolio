@@ -4,8 +4,13 @@
     padding: 0;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'PT Sans', arial;
+    color: white;
 }
 
 header {
@@ -13,9 +18,18 @@ header {
     background-color: #000;
     padding: 20px 30px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0 1px 2px white;
+    position: relative;
+    z-index: 100;
+}
+
+header p {
+    font-size: 2rem;
+    margin-left: 3rem;
+    font-family: 'Smooch';
+    word-spacing: 0.5rem;
 }
 
 .link-provider {
@@ -31,22 +45,81 @@ header {
     font-family: 'PT Sans';
     font-size: 18px;
     text-decoration: none;
-    line-height: 18px;
+    line-height: 20px;
     text-shadow: 
     0 0 rgb(12, 223, 223),
-    0 18px rgb(62, 255, 37);
+    0 20px rgb(4, 51, 180);
     overflow: hidden;
     transition: 300ms;
 }
 
 .navlink:hover {
     text-shadow: 
-    0 -18px rgb(12, 223, 223),
-    0 0 rgb(62, 255, 37);
-    border-bottom: 2px solid rgb(62, 255, 37);
+    0 -20px rgb(12, 223, 223),
+    0 0 rgb(4, 51, 180);
+    border-bottom: 2px solid rgb(4, 51, 180);
 }
 
 .active {
     font-weight: bold;
     border-bottom: 3px solid rgb(12, 223, 223); 
+}
+
+main {
+    background-color: #001;
+    min-height: 90vh;
+}
+
+.home-section {
+    text-align: center;
+    width: 100%;
+    padding: 3rem 0 
+}
+
+
+h1 {
+    font-size: 5rem;
+    font-weight: normal;
+    margin-bottom: 1.25rem;
+    background: linear-gradient(rgb(21, 3, 187), rgb(12, 223, 223));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h6 {
+    margin-bottom: 2rem;
+    font-family: 'Smooch';
+    font-size: 1.5rem;
+    word-spacing: 0.5rem;
+}
+
+span {
+    color: rgb(12, 223, 223);
+}
+
+.text-box {
+    text-align: left;
+    padding: 1rem 3rem;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+
+.skills {
+    width: 60%;
+    border-top: 2px solid #456789;
+    border-bottom: 2px solid #456789;
+    margin: auto;
+    padding: 3rem;
+}
+
+@media only screen and (max-width: 740px) {
+    header {
+        justify-content: center;
+    }
+
+    .link-provider {
+        width: 100%;
+    }
 }
